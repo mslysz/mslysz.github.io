@@ -33,21 +33,60 @@
       </nav>
       <section>
         <div class="contact">
-          <h1>Contact details:</h1>
-          <a class="link" href="mailto: MS@gmail.com">
-            <i class="fa-solid fa-envelope"></i> Click here to send me an
-            email</a
-          >
           <p>
             <a class="link" href="https://github.com/mslysz" target="_blank"
               ><i class="fa-brands fa-github"></i> My GitHub Repository</a
             >
           </p>
+
+          <h1>Contact form:</h1>
+
+          <form id="myForm" name="myForm">
+            <label for="first_name">First Name</label> <br />
+            <input
+              required
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="First Name"
+            />
+            <br />
+
+            <label for="last_name">Last Name</label> <br />
+            <input
+              required
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Last Name"
+            />
+            <br />
+
+            <label for="email">E-mail</label> <br />
+            <input
+              required
+              type="text"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <br />
+
+            <button class="btn_form" type="submit">Submit</button><br />
+            <button class="btn_form" type="button" onclick="closeForm()">
+              Close
+            </button>
+          </form>
+
+          <button class="open_btn" type="button" onclick="openForm()">
+            Open Form
+          </button>
         </div>
       </section>
       <footer>
         <h1>Maciej-S all rights reserved &copy;</h1>
       </footer>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
