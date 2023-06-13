@@ -96,7 +96,13 @@ body {
 .typed-text {
   animation: type 5s linear;
 }
-
+.cursor {
+  opacity: 0;
+  transition: 4;
+}
+.cursor.active {
+  opacity: 1;
+}
 /* SKILLS PAGE */
 
 .skills {
