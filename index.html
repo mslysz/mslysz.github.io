@@ -7,26 +7,68 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | QR code component</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
-      <img src="/images/image-qr-code.png" alt="qr-code" />
-      <div class="description">
-        <h2>Improve your front-end skills by building projects</h2>
-        <p>
-          Scan the QR code to visit Frontend Mentor and take you coding skills
-          to the next level
+      <div class="box_1">
+        <h1>Your Result</h1>
+        <div class="circle">
+          <p>76</p>
+          <p><span>of 100</span></p>
+        </div>
+        <h2>Great</h2>
+        <p class="description">
+          You scored higher than 65% of the people who have taken these tests.
         </p>
+      </div>
+      <div class="box_2">
+        <div class="summary">
+          <h1>Summary</h1>
+        </div>
+        <div class="score">
+          <p class="score__object">
+            <img src="/images/icon-reaction.svg" alt="" /><span class="c1"
+              >Reaction
+            </span>
+          </p>
+          <p>80 <span class="c-100">/ 100</span></p>
+        </div>
+        <div class="score">
+          <p class="score__object">
+            <img src="/images/icon-memory.svg" alt="" /><span class="c2"
+              >Memory</span
+            >
+          </p>
+          <p>92 <span class="c-100">/ 100</span></p>
+        </div>
+        <div class="score">
+          <p class="score__object">
+            <img src="/images/icon-verbal.svg" alt="" /><span class="c3"
+              >Verbal</span
+            >
+          </p>
+          <p>61 <span class="c-100">/ 100</span></p>
+        </div>
+        <div class="score">
+          <p class="score__object">
+            <img src="/images/icon-visual.svg" alt="" /><span class="c4"
+              >Visual</span
+            >
+          </p>
+          <p>72 <span class="c-100">/ 100</span></p>
+        </div>
+
+        <button>Continue</button>
       </div>
     </div>
   </body>

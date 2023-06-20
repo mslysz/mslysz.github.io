@@ -4,47 +4,198 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Outfit", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 body {
   max-width: 1440px;
-  min-width: 375px;
-  margin: 0 auto;
-  background-color: hsl(212, 45%, 89%);
+  background-color: hsl(221, 100%, 96%);
 }
-
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 20px;
-  width: 320px;
-  height: 500px;
+  width: 740px;
+  height: 510px;
+  border-radius: 25px;
 }
 
-.container img {
-  border-radius: 10px;
-  width: 90%;
-  margin: 15px 0px 0px 15px;
+.box_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+  height: 100%;
+  width: 50%;
+  border-radius: 25px;
+}
+
+.box_1 h1 {
+  color: hsl(241, 100%, 89%);
+  font-size: 24px;
+  margin: 35px 0 40px 0;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 32px;
+  font-weight: 500;
+  margin: 25px 0 10px 0;
 }
 .description {
-  width: 100%;
-  margin: 25px 0 22px 10px;
+  color: hsl(241, 100%, 89%);
   text-align: center;
+  width: 250px;
+  font-size: 18px;
 }
-h2 {
-  color: hsl(218, 44%, 22%);
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(77, 21, 229, 0.698), hsla(241, 75%, 34%, 0));
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.circle p {
+  color: hsl(0, 0%, 100%);
+  font-size: 72px;
+  font-weight: 800;
+}
+.circle p span {
+  color: hsla(241, 100%, 89%, 0.544);
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+.box_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+.summary {
+  font-size: 12px;
+  width: 280px;
+  margin: 8px 0 20px 0;
+  color: hsl(224, 30%, 27%);
+}
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 56px;
+  margin: 8px;
+  border-radius: 10px;
+  text-align: center;
   font-weight: 700;
-  font-size: 22px;
-  width: 90%;
-  margin: 0 0 15px 10px;
+  font-size: 18px;
 }
-p {
-  color: hsl(220, 15%, 55%);
-  font-size: 15px;
-  font-weight: 400;
-  width: 81%;
-  margin: 0 0 10px 20px;
+.score img {
+  margin-right: 10px;
+}
+.score__object {
+  margin-left: 15px;
+}
+.score:nth-of-type(2) {
+  background-color: hsla(0, 77%, 73%, 0.133);
+}
+.score:nth-of-type(3) {
+  background-color: hsla(39, 100%, 56%, 0.133);
+}
+.score:nth-of-type(4) {
+  background-color: hsla(166, 100%, 37%, 0.133);
+}
+.score:nth-of-type(5) {
+  background-color: hsla(234, 85%, 45%, 0.133);
+}
+span.c1 {
+  color: hsl(0, 100%, 67%);
+}
+span.c2 {
+  color: hsl(39, 100%, 56%);
+}
+span.c3 {
+  color: hsl(166, 100%, 37%);
+}
+span.c4 {
+  color: hsl(234, 85%, 45%);
+}
+
+span.c-100 {
+  color: hsla(224, 30%, 27%, 0.527);
+  margin-right: 15px;
+}
+button {
+  width: 280px;
+  height: 55px;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 50px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  margin: 40px 0 12px 0;
+
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+}
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+  }
+  .box_1 {
+    height: 355px;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .box_2 {
+    width: 100%;
+    height: 460px;
+  }
+  .summary {
+    font-size: 12px;
+    width: 280px;
+    margin: 8px 0 20px 0;
+    color: hsl(224, 30%, 27%);
+  }
+  .box_1 h1 {
+    font-size: 18px;
+    margin: 25px 0 25px 0;
+  }
+
+  .circle {
+    width: 140px;
+    height: 140px;
+  }
+  .circle p {
+    font-size: 54px;
+  }
+  .circle p span {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 24px;
+    margin: 25px 0 10px 0;
+  }
+  .description {
+    width: 260px;
+    font-size: 16px;
+  }
+  .summary {
+    font-size: 9px;
+    font-weight: 700;
+
+    margin: 5px 0 20px 0;
+  }
+
+  button {
+    margin: 15px 0 12px 0;
+  }
 }
