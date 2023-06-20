@@ -11,6 +11,10 @@ body {
   background-color: hsl(221, 100%, 96%);
 }
 .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   background-color: hsl(0, 0%, 100%);
   width: 740px;
@@ -145,6 +149,10 @@ button:hover {
 @media (max-width: 375px) {
   .container {
     flex-direction: column;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
 
     width: 100%;
     height: 100%;
