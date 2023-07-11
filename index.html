@@ -9,67 +9,62 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Results summary component</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
   </head>
   <body>
     <div class="container">
-      <div class="box_1">
-        <h1>Your Result</h1>
-        <div class="circle">
-          <p>76</p>
-          <p><span>of 100</span></p>
-        </div>
-        <h2>Great</h2>
-        <p class="description">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
-      </div>
-      <div class="box_2">
-        <div class="summary">
-          <h1>Summary</h1>
-        </div>
-        <div class="score">
-          <p class="score__object">
-            <img src="/images/icon-reaction.svg" alt="" /><span class="c1"
-              >Reaction
-            </span>
-          </p>
-          <p>80 <span class="c-100">/ 100</span></p>
-        </div>
-        <div class="score">
-          <p class="score__object">
-            <img src="/images/icon-memory.svg" alt="" /><span class="c2"
-              >Memory</span
-            >
-          </p>
-          <p>92 <span class="c-100">/ 100</span></p>
-        </div>
-        <div class="score">
-          <p class="score__object">
-            <img src="/images/icon-verbal.svg" alt="" /><span class="c3"
-              >Verbal</span
-            >
-          </p>
-          <p>61 <span class="c-100">/ 100</span></p>
-        </div>
-        <div class="score">
-          <p class="score__object">
-            <img src="/images/icon-visual.svg" alt="" /><span class="c4"
-              >Visual</span
-            >
-          </p>
-          <p>72 <span class="c-100">/ 100</span></p>
-        </div>
+      <div class="imgContainer"></div>
+      <div class="contentWrap">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-        <button>Continue</button>
+        <p>
+          <img class="icon" src="/images/icon-list.svg" alt="icon" />Product
+          discovery and building what matters
+        </p>
+
+        <p>
+          <img class="icon" src="/images/icon-list.svg" alt="icon" />Measuring
+          to ensure updates are a success
+        </p>
+        <p>
+          <img class="icon" src="/images/icon-list.svg" alt="icon" />And much
+          more!
+        </p>
+        <form class="form" action="">
+          <label for="email"
+            >Email address
+            <span class="validEmail valid">Valid email required</span></label
+          >
+          <input class="text" type="email" placeholder="email@company.com" />
+          <input
+            class="submitBtn"
+            type="submit"
+            value="Subscribe to monthly newsletter"
+          />
+        </form>
       </div>
     </div>
+    <div class="msgContainer turnoff">
+      <img class="iconBig" src="/images/icon-success.svg" alt="icon" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to
+        <span class="emailTxt"></span>. Please open it and click the button
+        inside to confirm your subscription.
+      </p>
+      <button class="dismissBtn">Dismiss message</button>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

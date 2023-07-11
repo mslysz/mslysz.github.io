@@ -3,207 +3,253 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: "Hanken Grotesk", sans-serif;
+*:focus {
+  outline: none;
 }
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
-  max-width: 1440px;
-  background-color: hsl(221, 100%, 96%);
+  max-width: 376px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.imgContainer {
+  background: url(/images/illustration-sign-up-mobile.svg);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30%;
+}
+.icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 16px;
 }
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  background-color: hsl(0, 0%, 100%);
-  width: 740px;
-  height: 510px;
-  border-radius: 25px;
+  height: 100vh;
 }
-
-.box_1 {
+/* CONTENT MOBILE*/
+.contentWrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
-  height: 100%;
-  width: 50%;
-  border-radius: 25px;
+  margin: 38px 22px 0px 22px;
+}
+.contentWrap p {
+  display: flex;
+  margin-bottom: 28px;
 }
 
-.box_1 h1 {
-  color: hsl(241, 100%, 89%);
-  font-size: 24px;
-  margin: 35px 0 40px 0;
+.contentWrap h1 {
+  font-size: 38px;
+  margin-bottom: 18px;
 }
 
-h2 {
-  color: hsl(0, 0%, 100%);
-  font-size: 32px;
-  font-weight: 500;
-  margin: 25px 0 10px 0;
-}
-.description {
-  color: hsl(241, 100%, 89%);
-  text-align: center;
-  width: 250px;
-  font-size: 18px;
-}
-.circle {
+/* FORM MOBILE*/
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(rgba(77, 21, 229, 0.698), hsla(241, 75%, 34%, 0));
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  margin: 10px 22px;
 }
-.circle p {
-  color: hsl(0, 0%, 100%);
-  font-size: 72px;
-  font-weight: 800;
-}
-.circle p span {
-  color: hsla(241, 100%, 89%, 0.544);
-  font-size: 18px;
-  font-weight: 500;
-  display: block;
-}
-.box_2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-}
-.summary {
-  font-size: 12px;
-  width: 280px;
-  margin: 8px 0 20px 0;
-  color: hsl(224, 30%, 27%);
-}
-.score {
+.form label {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  height: 56px;
-  margin: 8px;
-  border-radius: 10px;
-  text-align: center;
+  font-size: 12px;
   font-weight: 700;
-  font-size: 18px;
+  margin-bottom: 8px;
 }
-.score img {
-  margin-right: 10px;
-}
-.score__object {
-  margin-left: 15px;
-}
-.score:nth-of-type(2) {
-  background-color: hsla(0, 77%, 73%, 0.133);
-}
-.score:nth-of-type(3) {
-  background-color: hsla(39, 100%, 56%, 0.133);
-}
-.score:nth-of-type(4) {
-  background-color: hsla(166, 100%, 37%, 0.133);
-}
-.score:nth-of-type(5) {
-  background-color: hsla(234, 85%, 45%, 0.133);
-}
-span.c1 {
-  color: hsl(0, 100%, 67%);
-}
-span.c2 {
-  color: hsl(39, 100%, 56%);
-}
-span.c3 {
-  color: hsl(166, 100%, 37%);
-}
-span.c4 {
-  color: hsl(234, 85%, 45%);
-}
+/* VALID EMAIL MESSAGE SPAN */
 
-span.c-100 {
-  color: hsla(224, 30%, 27%, 0.527);
-  margin-right: 15px;
+.active {
+  background-color: rgba(255, 98, 87, 0.276);
+  border-color: rgba(255, 98, 87, 0.661);
+  color: hsl(4, 100%, 67%);
 }
-button {
-  width: 280px;
-  height: 55px;
-  background-color: hsl(224, 30%, 27%);
-  border-radius: 50px;
-  color: hsl(0, 0%, 100%);
-  font-size: 18px;
-  margin: 40px 0 12px 0;
-
+.active2 {
+  color: hsl(4, 100%, 67%);
+  margin-left: 95px;
+}
+/* /////////////////////////////////////////////// */
+.form input {
+  height: 58px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  border: 2px solid hsl(332.83deg 18.55% 84.73%);
   cursor: pointer;
 }
-button:hover {
-  background: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+
+.text {
+  padding-left: 5px;
+  font-size: 16px;
 }
-@media (max-width: 375px) {
-  .container {
-    flex-direction: column;
-    position: static;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0);
 
-    width: 100%;
+.form input::placeholder {
+  padding-left: 26px;
+  font-size: 16px;
+  color: hsl(231, 7%, 60%);
+}
+.submitBtn {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* SUBSCRIBE MESSAGE */
+.msgContainer {
+  margin: 0 22px;
+  height: 100%;
+}
+.iconBig {
+  height: 65px;
+  width: 65px;
+  margin: 100px 0 30px 0;
+}
+.msgContainer h2 {
+  font-size: 40px;
+  margin-bottom: 26px;
+}
+.emailTxt {
+  font-weight: 700;
+}
+.dismissBtn {
+  position: absolute;
+  bottom: 40px;
+  width: 330px;
+  height: 58px;
+  border-radius: 10px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.submitBtn:hover,
+.dismissBtn:hover {
+  background-color: hsl(4, 100%, 67%);
+  border: none;
+  box-shadow: 10px 12px 31px -8px hsl(4, 100%, 67%);
+  -webkit-box-shadow: 10px 12px 31px -8px hsl(4, 100%, 67%);
+  -moz-box-shadow: 10px 12px 31px -8px hsl(4, 100%, 67%);
+}
+
+/* MEDIA  */
+
+@media (min-width: 377px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+  .imgContainer {
+    background: url(/images/illustration-sign-up-desktop.svg);
+    width: 50%;
     height: 100%;
+    background-repeat: no-repeat;
   }
-  .box_1 {
-    height: 355px;
-    width: 100%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  .icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 16px;
   }
-  .box_2 {
-    width: 100%;
-    height: 460px;
-  }
-  .summary {
-    font-size: 12px;
-    width: 280px;
-    margin: 8px 0 20px 0;
-    color: hsl(224, 30%, 27%);
-  }
-  .box_1 h1 {
-    font-size: 18px;
-    margin: 25px 0 25px 0;
+  .container {
+    padding: 22px;
+    gap: 31px;
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 920px;
+    height: 630px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 35px;
   }
 
-  .circle {
-    width: 140px;
-    height: 140px;
+  /* CONTENT MOBILE*/
+  .contentWrap {
+    margin: 38px 22px 0px 22px;
+    width: 50%;
   }
-  .circle p {
-    font-size: 54px;
+  .contentWrap p {
+    margin-bottom: 14px;
   }
-  .circle p span {
-    font-size: 14px;
+  .contentWrap p:nth-of-type(1) {
+    margin-bottom: 26px;
   }
-  h2 {
-    font-size: 24px;
-    margin: 25px 0 10px 0;
+  .contentWrap p:nth-of-type(4) {
+    margin-bottom: 40px;
   }
-  .description {
-    width: 260px;
+
+  .contentWrap h1 {
+    font-size: 56px;
+    margin: 32px 0px 20px 0px;
+  }
+
+  /* FORM MOBILE*/
+  .form {
+    margin: 10px 0px;
+  }
+
+  /* VALID EMAIL MESSAGE SPAN */
+  .active2 {
+    color: hsl(4, 100%, 67%);
+    margin-left: 210px;
+  }
+  /* //////////////////////////////// */
+
+  .submitBtn {
     font-size: 16px;
   }
-  .summary {
-    font-size: 9px;
-    font-weight: 700;
 
-    margin: 5px 0 20px 0;
+  /* SUBSCRIBE MESSAGE */
+  .msgContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 520px;
+    margin: 0px 0px;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .iconBig {
+    height: 65px;
+    width: 65px;
+    margin: 46px 65px 42px 65px;
+  }
+  .msgContainer h2 {
+    font-size: 54px;
+    margin: 0px 0px 14px 65px;
+    line-height: 1.1;
+  }
+  .msgContainer p:nth-of-type(1) {
+    margin: 0 65px;
+    line-height: 1.5;
   }
 
-  button {
-    margin: 15px 0 12px 0;
+  .dismissBtn {
+    position: absolute;
+    bottom: 11%;
+    left: 65px;
+    width: 380px;
+    height: 58px;
   }
+}
+.turnoff {
+  display: none;
+}
+
+.validEmail {
+  color: hsl(4, 100%, 67%);
+}
+.valid {
+  display: none;
 }
